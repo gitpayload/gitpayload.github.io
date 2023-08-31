@@ -70,18 +70,6 @@
 <div class="icon">
     
         
-            <a title="rss"
-               href="/atom.xml"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-rss"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
             <a title="github"
                href="https://github.com/yelog"
                target="_blank">
@@ -91,22 +79,6 @@
                     </svg>
                 
             </a>
-        
-    
-        
-            <a title="facebook"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
         
     
         
@@ -170,40 +142,12 @@
         
     
         
-    
-        
-            <a title="oschina"
-               href="https://my.oschina.net/yelog"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-oschina"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-    
-        
             <a title="email"
                href="mailto:jaytp@qq.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
                         <use xlink:href="#icon-email"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="qq"
-               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-qq"></use>
                     </svg>
                 
             </a>
@@ -260,7 +204,7 @@
         
             <a class="about  hasFriend  site_url"
                
-               href="/about">About</a>
+               href="/">About</a>
         
         <a style="width: 50%"
                 
@@ -285,7 +229,7 @@
     <div class="friends-content">
         <ul>
             
-            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            <li><a target="_blank" href="/">None</a></li>
             
         </ul>
     </div>
@@ -414,10 +358,6 @@
 </article>
 
 
-<p>
-    <a  class="dashang" onclick="dashangToggle()">💰</a>
-</p>
-
 
 
 
@@ -431,7 +371,7 @@
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Yelog
+    ©2023-2026 Michael
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
@@ -442,24 +382,6 @@
 
     </div>
 </div>
-
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close"  onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>Help us with donation</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
-        </div>
-    </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
-    </div>
-</div>
-
 
 </body>
 <script src="/js/jquery.pjax.js?v=1.1.0" ></script>
@@ -474,14 +396,6 @@
         
 
         /*渲染打赏样式*/
-        
-        $("input[name=pay]").on("click", function () {
-            if($("input[name=pay]:checked").val()=="weixin"){
-                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
-            } else {
-                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
-            }
-        })
         
 
         /*高亮代码块行号*/
@@ -500,11 +414,6 @@
     }
 
     /*打赏页面隐藏与展示*/
-    
-    function dashangToggle() {
-        $(".shang_box").fadeToggle();
-        $(".hide_box").fadeToggle();
-    }
     
 
 </script>
